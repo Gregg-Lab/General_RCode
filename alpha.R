@@ -6,31 +6,26 @@
 
 #AUTHOR:
 ###Date Created:  06-11-2019
-###Date Last Modified:  07-11-2019
+###Date Last Modified:  07-19-2019
 ###Created by Zach Carlson, BS
 ###email: zcarlson@umich.edu
 ###DO NOT REMOVE ABOVE TEXT#
 
 #load required libraries
-library(RColorBrewer) #gives color schemes
 library(tidyverse)
-library(vegan) #ecology package, diversity analysis, etc.
-library(plyr) #tool for splitting, applying, and combining data
-library(tm) #loaded to use removeNumbers() which removes any number in a string
-library(shiny)
-library(ggpubr)
+
 
 ######READ IN FUNCTIONS FILE######
-source("~/Downloads/R_Microbiome/utilities.R")
+source("H:/My Documents/GitHub/General_RCode/utilities.R") #windows users
 ##################################
 
 ######ENTER IN VALUES######
 TITLE <- "P11 Mom Alpha Diversity"
-SUMMARY.FILE <- "combined_mom.final.p11.groups.summary.csv" #Cols: [standard raw Mothur file]
-DESIGN.FILE <- "combined_mom_p11.design.txt" #Cols: Sample, Group
+SUMMARY.FILE <- "combined_mompup.final.groups.summary" #Cols: [standard raw Mothur file]
+DESIGN.FILE <- "combined_P19.design.txt" #Cols: Sample, Group
 ###########################
 
-setwd("~/Downloads/R_Microbiome/AlphaDiversity/")
+setwd("H:/My Documents/Microbiome-2019-07/AlphaDiversity/") #windows users
 
 #import data
 stats <- read.table(file = SUMMARY.FILE, header = TRUE)
