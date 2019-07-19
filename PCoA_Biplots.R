@@ -60,7 +60,7 @@ CORR_AXES_MIN_SEQ_COUNT = 200
 library(colorspace, quiet = TRUE)
 library(shape)
 library(plyr) #tool for splitting, applying, and combining data
-library(stringr) #loaded to use str_replace_all() which removes all special characters in a string
+library(tidyverse) #loaded to use str_replace_all() which removes all special characters in a string
 library(tm) #loaded to use removeNumbers() which removes any number in a string
 
 ######READ IN FUNCTIONS FILE######

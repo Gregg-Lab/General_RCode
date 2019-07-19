@@ -12,9 +12,7 @@
 ###email: zcarlson@umich.edu
 ###DO NOT REMOVE ABOVE TEXT#
 library(readxl) #excel manipulation package
-library(lubridate) #convenient date converter
 library(tidyverse) #tidys data
-library(reprex) #reproducible examples
 
 ######READ IN FUNCTIONS FILE######
 source("~/Downloads/R_Microbiome/utilities.R")
